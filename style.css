@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -46,3 +47,53 @@ button {
   padding: 10px;
   cursor: pointer;
 }
+=======
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.hero {
+  background: #2c3e50;
+  color: white;
+  padding: 80px 20px;
+}
+
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.pricing .plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+>>>>>>> 9b93a436d5e315866d3d44e747947c51a7d15801
