@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Course & Duration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Select Your Course & Duration</h2>
+
+  <!-- Course Dropdown -->
+  <select id="courseSelect" required>
+    <option value="">-- Choose a Course --</option>
+    <option value="Web Development">Web Development</option>
+    <option value="App Development">App Development</option>
+    <option value="UI/UX Design">UI/UX Design</option>
+    <option value="SEO Optimization">SEO Optimization</option>
+    <option value="Digital Marketing">Digital Marketing</option>
+    <option value="Content Creation">Content Creation</option>
+  </select>
+
+  <br><br>
+  <!-- Continue button (hidden initially) -->
+  <button id="continueBtn" style="display:none;">Continue</button>
+
+  <!-- Duration Options (hidden initially) -->
+  <form id="planForm" style="display:none; margin-top:20px;">
+    <h3>Select Plan Duration</h3>
+    <label><input type="radio" name="duration" value="2" required> 2 Months (₹300)</label><br>
+    <label><input type="radio" name="duration" value="4"> 4 Months (₹600)</label><br>
+    <label><input type="radio" name="duration" value="6"> 6 Months (₹800)</label><br>
+    <label><input type="radio" name="duration" value="12"> 12 Months (₹1500)</label><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="output"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

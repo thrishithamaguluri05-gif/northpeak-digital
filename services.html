@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - NorthPeak Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Help Desk button at top right -->
+  <div class="help-desk">
+    <button id="helpBtn">Help Desk</button>
+  </div>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div>Web Development</div>
+      <div>App Development</div>
+      <div>UI/UX Design</div>
+      <div>SEO Optimization</div>
+      <div>Digital Marketing</div>
+      <div>Content Creation</div>
+    </div>
+  </section>
+
+  <!-- Course + Duration Selection -->
+  <section class="course-box" style="text-align:center; margin-top:30px;">
+    <h3>Choose a Course</h3>
+    <select id="courseSelect" required>
+      <option value="">-- Select a Course --</option>
+      <option value="Web Development">Web Development</option>
+      <option value="App Development">App Development</option>
+      <option value="UI/UX Design">UI/UX Design</option>
+      <option value="SEO Optimization">SEO Optimization</option>
+      <option value="Digital Marketing">Digital Marketing</option>
+      <option value="Content Creation">Content Creation</option>
+    </select>
+
+    <br><br>
+    <!-- Continue button (hidden initially) -->
+    <button id="continueBtn" style="display:none;">Continue</button>
+
+    <!-- Duration Options (hidden initially) -->
+    <form id="planForm" style="display:none; margin-top:20px;">
+      <h3>Select Plan Duration</h3>
+      <label><input type="radio" name="duration" value="2" required> 2 Months (₹300)</label><br>
+      <label><input type="radio" name="duration" value="4"> 4 Months (₹600)</label><br>
+      <label><input type="radio" name="duration" value="6"> 6 Months (₹800)</label><br>
+      <label><input type="radio" name="duration" value="12"> 12 Months (₹1500)</label><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="output" style="margin-top:20px; font-weight:bold; color:green;"></p>
+  </section>
+
+  <!-- Contact Us Sidebar (hidden initially) -->
+  <div id="contactSidebar" class="sidebar" style="display:none;">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <p>"NorthPeak helped us grow our business!"</p>
+    <p>"Amazing team and great results."</p>
+  </section>
+
+  <!-- Back to Home -->
+  <footer>
+    <p><a href="index.html">⬅ Back to Home</a></p>
+  </footer>
+
+  <!-- Script must be at the bottom -->
+  <script src="script.js"></script>
+</body>
+</html>

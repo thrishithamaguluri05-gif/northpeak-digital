@@ -7,59 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Hero Section -->
   <section class="hero">
     <h1>Welcome to NorthPeak Digital</h1>
     <p>Your trusted digital agency</p>
-    <button id="getStartedBtn">Get Started</button>
+    <button onclick="window.location.href='services.html'">Get Started</button>
   </section>
 
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div>Web Development</div>
-      <div>App Development</div>
-      <div>UI/UX Design</div>
-      <div>SEO Optimization</div>
-      <div>Digital Marketing</div>
-      <div>Content Creation</div>
-    </div>
-  </section>
+  <!-- Help Desk button at top right -->
+  <div class="help-desk">
+    <button id="helpBtn">Help Desk</button>
+  </div>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <p>"NorthPeak helped us grow our business!"</p>
-    <p>"Amazing team and great results."</p>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="pricing">
-    <h2>Pricing Plans</h2>
-    <div class="plans">
-      <div>Basic - $99</div>
-      <div>Standard - $199</div>
-      <div>Premium - $299</div>
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section class="contact">
+  <!-- Contact Us Sidebar (hidden initially) -->
+  <div id="contactSidebar" class="sidebar" style="display:none;">
     <h2>Contact Us</h2>
     <form id="contactForm">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Message" required></textarea>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
       <button type="submit">Send</button>
     </form>
-  </section>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <p>Built for Digital Heroes Training Task | <a href="https://digitalheroesco.com">digitalheroesco.com</a></p>
+    <p>Built for Digital Heroes Training Task | 
+      <a href="https://digitalheroesco.com">digitalheroesco.com</a>
+    </p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Script must be at the bottom -->
+<script src="script.js"></script>
 </body>
 </html>
